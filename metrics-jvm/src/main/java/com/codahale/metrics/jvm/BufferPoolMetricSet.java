@@ -1,5 +1,6 @@
 package com.codahale.metrics.jvm;
 
+import com.codahale.metrics.JmxAttributeGauge;
 import com.codahale.metrics.Metric;
 import com.codahale.metrics.MetricSet;
 import org.slf4j.Logger;
