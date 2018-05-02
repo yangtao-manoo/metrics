@@ -1,6 +1,4 @@
-package com.codahale.metrics.jvm;
-
-import com.codahale.metrics.Gauge;
+package com.codahale.metrics;
 
 import java.io.IOException;
 import javax.management.JMException;
@@ -30,9 +28,9 @@ public class JmxAttributeGauge implements Gauge<Object> {
     /**
      * Creates a new JmxAttributeGauge.
      *
-     * @param mBeanServerConn the {@link MBeanServerConnection}
-     * @param objectName      the name of the object
-     * @param attributeName   the name of the object's attribute
+     * @param mBeanServerConn  the {@link MBeanServerConnection}
+     * @param objectName       the name of the object
+     * @param attributeName    the name of the object's attribute
      */
     public JmxAttributeGauge(MBeanServerConnection mBeanServerConn, ObjectName objectName, String attributeName) {
         this.mBeanServerConn = mBeanServerConn;
@@ -44,7 +42,9 @@ public class JmxAttributeGauge implements Gauge<Object> {
     public Object getValue() {
         try {
             return mBeanServerConn.getAttribute(getObjectName(), attributeName);
-        } catch (IOException | JMException e) {
+        } catch (IOException e) {
+            return null;
+        } catch (JMException e) {
             return null;
         }
     }

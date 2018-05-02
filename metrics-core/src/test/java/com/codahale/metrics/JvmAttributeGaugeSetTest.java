@@ -1,6 +1,5 @@
-package com.codahale.metrics.jvm;
+package com.codahale.metrics;
 
-import com.codahale.metrics.Gauge;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,13 +9,12 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-@SuppressWarnings("unchecked")
 public class JvmAttributeGaugeSetTest {
     private final RuntimeMXBean runtime = mock(RuntimeMXBean.class);
     private final JvmAttributeGaugeSet gauges = new JvmAttributeGaugeSet(runtime);
 
     @Before
-    public void setUp() {
+    public void setUp() throws Exception {
         when(runtime.getName()).thenReturn("9928@example.com");
 
         when(runtime.getVmVendor()).thenReturn("Oracle Corporation");
@@ -27,39 +25,40 @@ public class JvmAttributeGaugeSetTest {
     }
 
     @Test
-    public void hasASetOfGauges() {
+    public void hasASetOfGauges() throws Exception {
         assertThat(gauges.getMetrics().keySet())
                 .containsOnly("vendor", "name", "uptime");
     }
 
     @Test
-    public void hasAGaugeForTheJVMName() {
-        final Gauge<String> gauge = (Gauge<String>) gauges.getMetrics().get("name");
+    public void hasAGaugeForTheJVMName() throws Exception {
+        final Gauge gauge = (Gauge) gauges.getMetrics().get("name");
 
         assertThat(gauge.getValue())
                 .isEqualTo("9928@example.com");
     }
 
     @Test
-    public void hasAGaugeForTheJVMVendor() {
-        final Gauge<String> gauge = (Gauge<String>) gauges.getMetrics().get("vendor");
+    public void hasAGaugeForTheJVMVendor() throws Exception {
+        final Gauge gauge = (Gauge) gauges.getMetrics().get("vendor");
 
         assertThat(gauge.getValue())
                 .isEqualTo("Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 23.7-b01 (1.7)");
     }
 
     @Test
-    public void hasAGaugeForTheJVMUptime() {
-        final Gauge<Long> gauge = (Gauge<Long>) gauges.getMetrics().get("uptime");
+    public void hasAGaugeForTheJVMUptime() throws Exception {
+        final Gauge gauge = (Gauge) gauges.getMetrics().get("uptime");
 
         assertThat(gauge.getValue())
                 .isEqualTo(100L);
     }
 
     @Test
-    public void autoDiscoversTheRuntimeBean() {
-        final Gauge<Long> gauge = (Gauge<Long>) new JvmAttributeGaugeSet().getMetrics().get("uptime");
+    public void autoDiscoversTheRuntimeBean() throws Exception {
+        final Gauge gauge = (Gauge) new JvmAttributeGaugeSet().getMetrics().get("uptime");
 
-        assertThat(gauge.getValue()).isPositive();
+        assertThat((Long) gauge.getValue())
+                .isPositive();
     }
 }

@@ -1,4 +1,4 @@
-package com.codahale.metrics.jvm;
+package com.codahale.metrics;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -19,7 +19,7 @@ public class JmxAttributeGaugeTest {
 
     private static MBeanServer mBeanServer = ManagementFactory.getPlatformMBeanServer();
 
-    private static List<ObjectName> registeredMBeans = new ArrayList<>();
+    private static List<ObjectName> registeredMBeans = new ArrayList<ObjectName>();
 
     public interface JmxTestMBean {
         Long getValue();
