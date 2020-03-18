@@ -1,6 +1,6 @@
 package com.codahale.metrics.servlet;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.junit.Test;
 
 import javax.servlet.ServletContext;

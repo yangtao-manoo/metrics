@@ -1,10 +1,10 @@
 package com.codahale.metrics.benchmarks;
 
-import com.codahale.metrics.ExponentiallyDecayingReservoir;
-import com.codahale.metrics.SlidingTimeWindowArrayReservoir;
-import com.codahale.metrics.SlidingTimeWindowReservoir;
-import com.codahale.metrics.SlidingWindowReservoir;
-import com.codahale.metrics.UniformReservoir;
+import com.codahale.metrics.reservoir.ExponentiallyDecayingReservoir;
+import com.codahale.metrics.reservoir.SlidingTimeWindowArrayReservoir;
+import com.codahale.metrics.reservoir.SlidingTimeWindowReservoir;
+import com.codahale.metrics.reservoir.SlidingWindowReservoir;
+import com.codahale.metrics.reservoir.UniformReservoir;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Mode;
 import org.openjdk.jmh.annotations.Scope;

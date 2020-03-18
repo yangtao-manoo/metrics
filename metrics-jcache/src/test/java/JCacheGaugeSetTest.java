@@ -2,7 +2,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.jcache.JCacheGaugeSet;
 
 import javax.cache.Cache;

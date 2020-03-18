@@ -1,5 +1,10 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Histogram;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.Timer;
+
 import java.util.EventListener;
 
 /**

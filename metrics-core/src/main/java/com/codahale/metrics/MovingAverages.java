@@ -1,5 +1,9 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.ExponentialMovingAverages;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.SlidingTimeWindowMovingAverages;
+
 /**
  * A triple of moving averages (one-, five-, and fifteen-minute
  * moving average) as needed by {@link Meter}.

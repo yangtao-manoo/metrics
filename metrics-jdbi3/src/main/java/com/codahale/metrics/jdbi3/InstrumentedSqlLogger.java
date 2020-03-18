@@ -1,6 +1,6 @@
 package com.codahale.metrics.jdbi3;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.jdbi3.strategies.SmartNameStrategy;
 import com.codahale.metrics.jdbi3.strategies.StatementNameStrategy;
 import org.jdbi.v3.core.statement.SqlLogger;

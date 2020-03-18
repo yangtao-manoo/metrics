@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Timer;
+
 /**
  * An abstraction for how time passes. It is passed to {@link Timer} to track timing.
  */

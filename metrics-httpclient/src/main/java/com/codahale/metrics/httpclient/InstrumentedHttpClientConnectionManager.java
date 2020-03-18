@@ -1,7 +1,7 @@
 package com.codahale.metrics.httpclient;
 
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.apache.http.config.Registry;
 import org.apache.http.config.RegistryBuilder;
 import org.apache.http.conn.DnsResolver;
@@ -20,7 +20,7 @@ import org.apache.http.impl.conn.SystemDefaultDnsResolver;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 /**
  * A {@link HttpClientConnectionManager} which monitors the number of open connections.

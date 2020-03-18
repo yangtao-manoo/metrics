@@ -1,6 +1,6 @@
 package com.codahale.metrics.jdbi3.strategies;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.jdbi.v3.core.extension.ExtensionMethod;
 import org.jdbi.v3.core.statement.StatementContext;
 

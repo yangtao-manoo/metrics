@@ -1,8 +1,8 @@
 package com.codahale.metrics.benchmarks;
 
-import com.codahale.metrics.SlidingTimeWindowArrayReservoir;
-import com.codahale.metrics.SlidingTimeWindowReservoir;
-import com.codahale.metrics.Snapshot;
+import com.codahale.metrics.reservoir.SlidingTimeWindowArrayReservoir;
+import com.codahale.metrics.reservoir.SlidingTimeWindowReservoir;
+import com.codahale.metrics.snapshot.Snapshot;
 
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Group;

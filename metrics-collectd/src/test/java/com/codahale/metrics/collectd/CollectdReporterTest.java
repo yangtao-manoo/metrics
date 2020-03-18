@@ -1,12 +1,12 @@
 package com.codahale.metrics.collectd;
 
-import com.codahale.metrics.Counter;
-import com.codahale.metrics.Histogram;
-import com.codahale.metrics.Meter;
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Histogram;
+import com.codahale.metrics.impl.Meter;
 import com.codahale.metrics.MetricAttribute;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Snapshot;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.snapshot.Snapshot;
+import com.codahale.metrics.impl.Timer;
 import org.collectd.api.ValueList;
 import org.junit.Before;
 import org.junit.ClassRule;

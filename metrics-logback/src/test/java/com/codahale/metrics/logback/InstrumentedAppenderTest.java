@@ -2,7 +2,7 @@ package com.codahale.metrics.logback;
 
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.spi.ILoggingEvent;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.SharedMetricRegistries;
 import org.junit.After;
 import org.junit.Before;

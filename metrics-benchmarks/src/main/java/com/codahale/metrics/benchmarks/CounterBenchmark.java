@@ -1,6 +1,6 @@
 package com.codahale.metrics.benchmarks;
 
-import com.codahale.metrics.Counter;
+import com.codahale.metrics.impl.Counter;
 import org.openjdk.jmh.annotations.Benchmark;
 import org.openjdk.jmh.annotations.Scope;
 import org.openjdk.jmh.annotations.State;

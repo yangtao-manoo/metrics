@@ -1,8 +1,8 @@
 package com.codahale.metrics.httpclient5;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.MetricRegistryListener;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.Timer;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpServer;
 import org.apache.hc.client5.http.classic.HttpClient;

@@ -3,7 +3,7 @@ package com.codahale.metrics.jvm;
 import com.codahale.metrics.Gauge;
 import com.codahale.metrics.Metric;
 import com.codahale.metrics.MetricSet;
-import com.codahale.metrics.RatioGauge;
+import com.codahale.metrics.impl.RatioGauge;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.MemoryMXBean;
@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.regex.Pattern;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 /**
  * A set of gauges for JVM memory usage, including stats on heap vs. non-heap memory, plus

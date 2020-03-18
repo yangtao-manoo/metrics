@@ -1,7 +1,7 @@
 package com.codahale.metrics.httpasyncclient;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import com.codahale.metrics.httpclient.HttpClientMetricNameStrategies;
 import com.codahale.metrics.httpclient.HttpClientMetricNameStrategy;
 

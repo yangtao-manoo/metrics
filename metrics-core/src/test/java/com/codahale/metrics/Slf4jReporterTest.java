@@ -1,5 +1,8 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.*;
+import com.codahale.metrics.reporter.Slf4jReporter;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.Marker;

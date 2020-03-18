@@ -5,6 +5,8 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static java.util.concurrent.TimeUnit.NANOSECONDS;
 
+import com.codahale.metrics.reservoir.SlidingTimeWindowArrayReservoir;
+import com.codahale.metrics.reservoir.SlidingTimeWindowReservoir;
 import org.junit.Test;
 
 import java.util.Arrays;

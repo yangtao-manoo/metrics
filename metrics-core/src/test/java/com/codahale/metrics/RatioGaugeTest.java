@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.RatioGauge;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

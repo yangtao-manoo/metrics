@@ -1,6 +1,6 @@
 package com.codahale.metrics.servlets;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import org.eclipse.jetty.http.HttpHeader;
 import org.eclipse.jetty.servlet.ServletTester;

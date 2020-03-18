@@ -1,8 +1,8 @@
 package com.codahale.metrics.httpclient5;
 
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import org.apache.hc.client5.http.async.AsyncExecCallback;
 import org.apache.hc.client5.http.async.AsyncExecChain;
 import org.apache.hc.client5.http.async.AsyncExecChainHandler;

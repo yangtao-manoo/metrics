@@ -1,16 +1,16 @@
 package com.codahale.metrics.collectd;
 
 import com.codahale.metrics.Clock;
-import com.codahale.metrics.Counter;
+import com.codahale.metrics.impl.Counter;
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.Histogram;
-import com.codahale.metrics.Meter;
+import com.codahale.metrics.impl.Histogram;
+import com.codahale.metrics.impl.Meter;
 import com.codahale.metrics.MetricAttribute;
 import com.codahale.metrics.MetricFilter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.ScheduledReporter;
-import com.codahale.metrics.Snapshot;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.reporter.ScheduledReporter;
+import com.codahale.metrics.snapshot.Snapshot;
+import com.codahale.metrics.impl.Timer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

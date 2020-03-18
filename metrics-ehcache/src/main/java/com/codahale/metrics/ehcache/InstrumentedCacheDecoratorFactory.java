@@ -1,6 +1,6 @@
 package com.codahale.metrics.ehcache;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.SharedMetricRegistries;
 import net.sf.ehcache.Ehcache;
 import net.sf.ehcache.constructs.CacheDecoratorFactory;

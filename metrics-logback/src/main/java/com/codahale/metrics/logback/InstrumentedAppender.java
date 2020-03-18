@@ -4,11 +4,11 @@ import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.Appender;
 import ch.qos.logback.core.UnsynchronizedAppenderBase;
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.SharedMetricRegistries;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 /**
  * A Logback {@link Appender} which has six meters, one for each logging level and one for the total

@@ -1,7 +1,7 @@
 package com.codahale.metrics.jdbi;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import com.codahale.metrics.jdbi.strategies.SmartNameStrategy;
 import com.codahale.metrics.jdbi.strategies.StatementNameStrategy;
 import org.skife.jdbi.v2.StatementContext;

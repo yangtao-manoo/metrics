@@ -1,7 +1,7 @@
 package com.codahale.metrics.jersey2;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import com.codahale.metrics.jersey2.resources.InstrumentedFilteredResource;
 import com.codahale.metrics.jersey2.resources.TestRequestFilter;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -13,7 +13,7 @@ import javax.ws.rs.core.Application;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**

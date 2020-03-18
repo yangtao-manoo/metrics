@@ -10,6 +10,8 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.junit.Test;
 
 public class InstrumentedThreadFactoryTest {

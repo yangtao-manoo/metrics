@@ -1,6 +1,9 @@
 package com.codahale.metrics;
 
-import com.codahale.metrics.Timer.Context;
+import com.codahale.metrics.impl.Timer;
+import com.codahale.metrics.impl.Timer.Context;
+import com.codahale.metrics.reservoir.ExponentiallyDecayingReservoir;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

@@ -1,6 +1,6 @@
 package com.codahale.metrics.httpclient;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.apache.http.HttpRequest;
 import org.apache.http.client.HttpClient;
 

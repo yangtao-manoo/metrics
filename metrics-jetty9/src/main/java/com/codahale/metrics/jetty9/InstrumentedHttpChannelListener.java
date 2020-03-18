@@ -9,18 +9,18 @@ import javax.servlet.AsyncListener;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.codahale.metrics.Counter;
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.RatioGauge;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.RatioGauge;
+import com.codahale.metrics.impl.Timer;
 import org.eclipse.jetty.http.HttpMethod;
 import org.eclipse.jetty.server.AsyncContextState;
 import org.eclipse.jetty.server.HttpChannel.Listener;
 import org.eclipse.jetty.server.HttpChannelState;
 import org.eclipse.jetty.server.Request;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 /**
  * A Jetty {@link org.eclipse.jetty.server.HttpChannel.Listener} implementation which records various metrics about

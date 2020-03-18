@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.reservoir.SlidingTimeWindowReservoir;
 import org.junit.Test;
 
 import java.util.Arrays;

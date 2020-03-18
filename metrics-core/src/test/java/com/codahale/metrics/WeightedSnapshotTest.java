@@ -1,12 +1,14 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.snapshot.Snapshot;
+import com.codahale.metrics.snapshot.WeightedSnapshot;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.codahale.metrics.WeightedSnapshot.WeightedSample;
+import com.codahale.metrics.snapshot.WeightedSnapshot.WeightedSample;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.offset;

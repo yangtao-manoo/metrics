@@ -1,7 +1,7 @@
 package com.codahale.metrics.httpasyncclient;
 
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.apache.http.config.Registry;
 import org.apache.http.conn.DnsResolver;
 import org.apache.http.conn.SchemePortResolver;
@@ -14,7 +14,7 @@ import org.apache.http.nio.reactor.ConnectingIOReactor;
 
 import java.util.concurrent.TimeUnit;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 public class InstrumentedNClientConnManager extends PoolingNHttpClientConnectionManager {
 

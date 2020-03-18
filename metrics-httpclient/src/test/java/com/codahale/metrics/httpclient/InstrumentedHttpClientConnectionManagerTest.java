@@ -1,6 +1,6 @@
 package com.codahale.metrics.httpclient;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;

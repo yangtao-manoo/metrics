@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.reporter.FixedNameCsvFileProvider;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;

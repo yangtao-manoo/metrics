@@ -1,5 +1,10 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

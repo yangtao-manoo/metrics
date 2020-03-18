@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.reporter.CsvReporter;
+
 import java.io.File;
 
 /**

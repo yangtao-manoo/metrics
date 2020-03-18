@@ -1,8 +1,8 @@
 package com.codahale.metrics.httpasyncclient;
 
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.MetricRegistryListener;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.Timer;
 import com.codahale.metrics.httpclient.HttpClientMetricNameStrategy;
 import org.apache.http.HttpRequest;
 import org.apache.http.HttpHost;

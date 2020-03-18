@@ -1,8 +1,8 @@
 package com.codahale.metrics.ehcache;
 
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import net.sf.ehcache.CacheException;
 import net.sf.ehcache.Ehcache;
 import net.sf.ehcache.Element;
@@ -11,7 +11,7 @@ import net.sf.ehcache.statistics.StatisticsGateway;
 
 import java.io.Serializable;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 /**
  * An instrumented {@link Ehcache} instance.

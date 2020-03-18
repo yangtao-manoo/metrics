@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.snapshot.Snapshot;
+import com.codahale.metrics.snapshot.UniformSnapshot;
 import org.junit.Test;
 
 import java.io.ByteArrayOutputStream;

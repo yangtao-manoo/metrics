@@ -1,13 +1,13 @@
 package com.codahale.metrics.json;
 
-import com.codahale.metrics.Counter;
+import com.codahale.metrics.impl.Counter;
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.Histogram;
-import com.codahale.metrics.Meter;
+import com.codahale.metrics.impl.Histogram;
+import com.codahale.metrics.impl.Meter;
 import com.codahale.metrics.MetricFilter;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Snapshot;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.snapshot.Snapshot;
+import com.codahale.metrics.impl.Timer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
 package com.codahale.metrics.servlets.experiments;
 
-import com.codahale.metrics.Counter;
+import com.codahale.metrics.impl.Counter;
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.health.HealthCheckRegistry;
 import com.codahale.metrics.jetty9.InstrumentedConnectionFactory;
 import com.codahale.metrics.jetty9.InstrumentedHandler;
@@ -18,7 +18,7 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.eclipse.jetty.util.thread.ThreadPool;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 public class ExampleServer {
     private static final MetricRegistry REGISTRY = new MetricRegistry();

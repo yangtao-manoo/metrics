@@ -1,5 +1,8 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.*;
+import com.codahale.metrics.reporter.ConsoleReporter;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.junit.Before;
 import org.junit.Test;
 

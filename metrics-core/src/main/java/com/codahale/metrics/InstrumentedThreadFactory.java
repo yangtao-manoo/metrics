@@ -1,5 +1,9 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
+
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicLong;
 

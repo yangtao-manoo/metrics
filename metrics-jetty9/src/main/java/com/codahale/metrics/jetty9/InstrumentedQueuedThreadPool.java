@@ -1,14 +1,14 @@
 package com.codahale.metrics.jetty9;
 
 import com.codahale.metrics.Gauge;
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.RatioGauge;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.RatioGauge;
 import org.eclipse.jetty.util.annotation.Name;
 import org.eclipse.jetty.util.thread.QueuedThreadPool;
 
 import java.util.concurrent.BlockingQueue;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 
 public class InstrumentedQueuedThreadPool extends QueuedThreadPool {
     private final MetricRegistry metricRegistry;

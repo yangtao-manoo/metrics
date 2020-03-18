@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.reservoir.SlidingTimeWindowArrayReservoir;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.openjdk.jcstress.annotations.Actor;
 import org.openjdk.jcstress.annotations.Expect;
 import org.openjdk.jcstress.annotations.JCStressTest;

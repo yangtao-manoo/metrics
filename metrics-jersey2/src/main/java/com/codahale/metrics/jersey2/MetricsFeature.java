@@ -1,7 +1,7 @@
 package com.codahale.metrics.jersey2;
 
 import com.codahale.metrics.Clock;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.SharedMetricRegistries;
 
 import javax.ws.rs.core.Feature;

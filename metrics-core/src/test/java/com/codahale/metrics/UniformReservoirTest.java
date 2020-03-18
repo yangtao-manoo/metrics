@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.reservoir.UniformReservoir;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

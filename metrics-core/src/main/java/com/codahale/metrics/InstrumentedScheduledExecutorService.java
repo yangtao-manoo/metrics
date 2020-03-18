@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.*;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;

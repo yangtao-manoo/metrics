@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Counter;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

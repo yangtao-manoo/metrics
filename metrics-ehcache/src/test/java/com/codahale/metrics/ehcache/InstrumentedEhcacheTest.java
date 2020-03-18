@@ -1,7 +1,7 @@
 package com.codahale.metrics.ehcache;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import net.sf.ehcache.Cache;
 import net.sf.ehcache.CacheManager;
 import net.sf.ehcache.Ehcache;
@@ -10,7 +10,7 @@ import net.sf.ehcache.config.CacheConfiguration;
 import org.junit.Before;
 import org.junit.Test;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class InstrumentedEhcacheTest {

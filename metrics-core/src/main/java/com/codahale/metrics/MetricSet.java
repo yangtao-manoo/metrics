@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.MetricRegistry;
+
 import java.util.Map;
 
 /**

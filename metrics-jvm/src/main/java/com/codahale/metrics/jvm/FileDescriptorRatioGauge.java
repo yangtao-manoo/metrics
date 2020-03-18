@@ -1,6 +1,6 @@
 package com.codahale.metrics.jvm;
 
-import com.codahale.metrics.RatioGauge;
+import com.codahale.metrics.impl.RatioGauge;
 import com.sun.management.UnixOperatingSystemMXBean;
 
 import java.lang.management.ManagementFactory;

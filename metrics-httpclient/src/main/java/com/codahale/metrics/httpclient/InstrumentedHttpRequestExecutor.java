@@ -1,7 +1,7 @@
 package com.codahale.metrics.httpclient;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import org.apache.http.HttpClientConnection;
 import org.apache.http.HttpException;
 import org.apache.http.HttpRequest;
@@ -9,7 +9,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.protocol.HttpRequestExecutor;
 
-import com.codahale.metrics.Meter;
+import com.codahale.metrics.impl.Meter;
 
 import java.io.IOException;
 

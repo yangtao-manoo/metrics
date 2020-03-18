@@ -1,7 +1,7 @@
 package com.codahale.metrics.jdbi3;
 
-import com.codahale.metrics.MetricRegistry;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.MetricRegistry;
+import com.codahale.metrics.impl.Timer;
 import com.codahale.metrics.jdbi3.strategies.StatementNameStrategy;
 import org.jdbi.v3.core.statement.StatementContext;
 import org.junit.Test;

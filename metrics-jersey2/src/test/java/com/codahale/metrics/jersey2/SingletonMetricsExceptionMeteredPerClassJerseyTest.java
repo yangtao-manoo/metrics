@@ -1,7 +1,7 @@
 package com.codahale.metrics.jersey2;
 
-import com.codahale.metrics.Meter;
-import com.codahale.metrics.MetricRegistry;
+import com.codahale.metrics.impl.Meter;
+import com.codahale.metrics.impl.MetricRegistry;
 import com.codahale.metrics.jersey2.resources.InstrumentedResourceExceptionMeteredPerClass;
 import com.codahale.metrics.jersey2.resources.InstrumentedSubResourceExceptionMeteredPerClass;
 import org.glassfish.jersey.server.ResourceConfig;
@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.codahale.metrics.MetricRegistry.name;
+import static com.codahale.metrics.impl.MetricRegistry.name;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.failBecauseExceptionWasNotThrown;
 

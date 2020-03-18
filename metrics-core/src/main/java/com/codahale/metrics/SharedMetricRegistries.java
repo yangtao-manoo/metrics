@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.MetricRegistry;
+
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;

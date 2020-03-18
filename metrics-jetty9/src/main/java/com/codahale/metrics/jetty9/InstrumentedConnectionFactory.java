@@ -1,7 +1,7 @@
 package com.codahale.metrics.jetty9;
 
-import com.codahale.metrics.Counter;
-import com.codahale.metrics.Timer;
+import com.codahale.metrics.impl.Counter;
+import com.codahale.metrics.impl.Timer;
 import org.eclipse.jetty.io.Connection;
 import org.eclipse.jetty.io.EndPoint;
 import org.eclipse.jetty.server.ConnectionFactory;

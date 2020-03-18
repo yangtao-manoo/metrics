@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.CachedGauge;
 import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;

@@ -1,5 +1,7 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Timer;
+import com.codahale.metrics.snapshot.Snapshot;
 import org.junit.Test;
 
 import java.time.Duration;

@@ -5,7 +5,7 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 import java.util.concurrent.TimeUnit;
 
-import com.codahale.metrics.CachedGauge;
+import com.codahale.metrics.impl.CachedGauge;
 
 /**
  * A variation of ThreadStatesGaugeSet that caches the ThreadInfo[] objects for

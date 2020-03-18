@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.Meter;
 import org.junit.Test;
 import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;

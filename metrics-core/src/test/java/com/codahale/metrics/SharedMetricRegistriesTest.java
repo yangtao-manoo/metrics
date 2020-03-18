@@ -1,5 +1,6 @@
 package com.codahale.metrics;
 
+import com.codahale.metrics.impl.MetricRegistry;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.Rule;
